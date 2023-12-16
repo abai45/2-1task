@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .elements {
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            gap: 15px;
+            border: 3px solid rgb(42, 153, 147);
+            padding: 50px; 
+        }
+        .elements .firstColumn, .secondColumn, .thirdColumn {
+            display: grid;
+            grid-template-rows: repeat(2, 20px);
+            height: 120px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="elements">
+        <div class="firstColumn">
+            <span class="text">
+                Name:
+            </span><br>
+            <input type="text" placeholder="Type name...">
+            <span class="text"><br>
+                Country:
+            </span><br>
+            <select>
+                <option>Kazakhstan</option>
+                <option>Russia</option>
+                <option>USA</option>
+            </select>
+        </div>
+        <div class="secondColumn">
+            <span class="text">
+                Surname:
+            </span><br>
+            <input type="text" placeholder="Type surname...">
+            <span class="text"><br>
+                City:
+            </span><br>
+            <select>
+                <option>Almaty</option>
+                <option>Moscow</option>
+                <option>Miami</option>
+            </select>
+        </div>
+        <div class="thirdColumn">
+            <span class="text">
+                Login:
+            </span><br>
+            <input type="text" placeholder="Type login...">
+            <span class="text"><br>
+                Street:
+            </span><br>
+            <input type="text" placeholder="Type street...">
+        </div>
+        <button>
+            Загрузить данные
+        </button>
+</body>
+</html>
